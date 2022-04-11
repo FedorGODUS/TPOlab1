@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Men men = new Men();
-        men.setName("Mужчина");
+        men.setName("Мужчина");
         Women women = new Women();
         women.setName("Женщина");
         Element element1 = new Element("водород");
@@ -15,15 +15,15 @@ public class Main {
         elements.add(element2);
         elements.add(element3);
 
-        men.sit();
-        women.sit();
+        System.out.println(men.sit());
+        System.out.println(women.sit());
 
-        men.carry(women);
-        women.hate(men);
+        System.out.println(men.carry(women));
+        System.out.println(women.hate(men));
 
-        women.beHappy();
-        men.become(elements);
+        System.out.println(women.beHappy());
+        System.out.println(men.become(elements));
 
-        women.become(new ArrayList<>());
+        System.out.println(women.become(new ArrayList<>()));
     }
 }
